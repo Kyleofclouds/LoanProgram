@@ -61,7 +61,7 @@ namespace LoanProgram.Services
                                     Salary = e.Salary,
                                     MoveInDate = e.MoveInDate,
                                     ApplicationDate = e.ApplicationDate,
-                                    ResidencyLength = e.ResidencyLength,
+                                    //ResidencyLength = e.ResidencyLength,
                                     Phone = e.Phone,
                                     Email = e.Email,
                                     Contact = e.Contact,

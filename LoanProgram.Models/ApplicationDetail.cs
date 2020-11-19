@@ -16,10 +16,12 @@ namespace LoanProgram.Models
         public string Type { get; set; }
         public string Description { get; set; }
         public string Occupation { get; set; }
-        public int Salary { get; set; }
+        public double Salary { get; set; }
         [Display(Name = "Move-in Date")]
+        [DataType(DataType.Date)]
         public DateTime MoveInDate { get; set; }
         [Display(Name = "Application Date")]
+        [DataType(DataType.Date)]
         public DateTime ApplicationDate { get; set; }
         [Display(Name = "Length of Residency")]
         public double ResidencyLength { get; set; }

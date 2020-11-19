@@ -35,8 +35,8 @@ namespace LoanProgram.Data
         }
         public DbSet<Applicant> Applicants { get; set; }
         public DbSet<Consultant> Consultants { get; set; }
-        public DbSet<Loan> Loans { get; set; }
-        public DbSet<Suggestion> Suggestions { get; set; }
+        //public DbSet<Loan> Loans { get; set; }
+        //public DbSet<Suggestion> Suggestions { get; set; }
         public DbSet<Application> Applications { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

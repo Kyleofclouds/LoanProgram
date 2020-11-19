@@ -9,15 +9,15 @@ using System.Web.Mvc;
 
 namespace LoanProgram.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class ApplicationController : Controller
     {
         // GET: Application
         public ActionResult Index()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new ApplicantService(userId);
-            var model = service.GetApplicants();
+            var service = new ApplicationService(userId);
+            var model = service.GetApplications();
 
             return View(model);
         }

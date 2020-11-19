@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace LoanProgram.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class ApplicantController : Controller
     {
         // GET: Applicant

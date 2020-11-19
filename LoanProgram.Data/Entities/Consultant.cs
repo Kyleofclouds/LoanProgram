@@ -21,8 +21,8 @@ namespace LoanProgram.Data.Entities
         public string FullName { get { return $"{FirstName} {LastName}"; } }
         [Required]
         public string Specialization { get; set; }
-        //[DefaultValue(true)]
         public bool IsCurrentEmployee { get; set; } = true;
+        [DataType(DataType.Date)]
         [Required]
         public DateTime HireDate { get; set; }
         public double TimeWith { get

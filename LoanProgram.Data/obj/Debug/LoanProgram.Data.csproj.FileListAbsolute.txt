@@ -14,3 +14,6 @@ C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data
 C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Debug\LoanProgram.Data.csproj.CopyComplete
 C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Debug\LoanProgram.Data.dll
 C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Debug\LoanProgram.Data.pdb
+C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Debug\LoanProgram.Data.Migrations.InitialCreate.resources
+C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Debug\LoanProgram.Data.csproj.GenerateResource.cache
+C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Debug\LoanProgram.Data.Migrations.InitialMigration.resources

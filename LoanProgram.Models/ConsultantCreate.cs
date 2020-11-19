@@ -22,6 +22,7 @@ namespace LoanProgram.Models
         [RegularExpression("Personal|personal|Home|home|Auto|auto|Business|business", ErrorMessage = "Please enter Personal, Home, Auto, or Business")]
         public string Specialization { get; set; }
         [Required]
+        [DataType(DataType.Date)]
         public DateTime HireDate { get; set; }
     }
 }

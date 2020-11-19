@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Pending Applications</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Start An Application", "Create")
 </p>
 @if (TempData.ContainsKey("SaveResult"))
 {
@@ -22,34 +22,34 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ApplicantId)
+            @Html.DisplayNameFor(model => model.Applicant.FullName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Description)
+            <center>@Html.DisplayNameFor(model => model.Description)</center>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Occupation)
+            <center>@Html.DisplayNameFor(model => model.Occupation)</center>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Salary)
+            <center>@Html.DisplayNameFor(model => model.Salary)</center>
+        </th>
+        @*<th>
+            <center>@Html.DisplayNameFor(model => model.MoveInDate)</center>
+        </th>*@
+        <th>
+            <center>@Html.DisplayNameFor(model => model.ApplicationDate)</center>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MoveInDate)
+            <center>@Html.DisplayNameFor(model => model.ResidencyLength)</center>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ApplicationDate)
+            <center>@Html.DisplayNameFor(model => model.Phone)</center>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ResidencyLength)
+            <center>@Html.DisplayNameFor(model => model.Email)</center>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Phone)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PreferredConsultant)
+            <center>@Html.DisplayNameFor(model => model.PreferredConsultant)</center>
         </th>
         <th></th>
     </tr>
@@ -58,34 +58,34 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ApplicantId)
+                @Html.DisplayFor(modelItem => item.Applicant.FullName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Description)
+                <center>@Html.DisplayFor(modelItem => item.Description)</center>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Occupation)
+                <center>@Html.DisplayFor(modelItem => item.Occupation)</center>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Salary)
+                <center>@Html.DisplayFor(modelItem => item.Salary)</center>
+            </td>
+            @*<td>
+                <center>@Html.DisplayFor(modelItem => item.MoveInDate)</center>
+            </td>*@
+            <td>
+                <center>@Html.DisplayFor(modelItem => item.ApplicationDate)</center>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.MoveInDate)
+                <center>@Html.DisplayFor(modelItem => item.ResidencyLength)</center>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ApplicationDate)
+                <center>@Html.DisplayFor(modelItem => item.Phone)</center>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ResidencyLength)
+                <center>@Html.DisplayFor(modelItem => item.Email)</center>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PreferredConsultant)
+                <center>@Html.DisplayFor(modelItem => item.PreferredConsultant)</center>
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |

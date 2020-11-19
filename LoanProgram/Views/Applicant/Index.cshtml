@@ -21,26 +21,26 @@
 }
 <table class="table">
     <tr>
-        <th>
+        @*<th>
             @Html.DisplayNameFor(model => model.FirstName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.LastName)
-        </th>
+        </th>*@
         <th>
             @Html.DisplayNameFor(model => model.FullName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Age)
+            <center>@Html.DisplayNameFor(model => model.Age)</center>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Address)
+            <center>@Html.DisplayNameFor(model => model.Address)</center>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.HeadOfHousehold)
+            <center>@Html.DisplayNameFor(model => model.HeadOfHousehold)</center>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SizeOfHousehold)
+            <center>@Html.DisplayNameFor(model => model.SizeOfHousehold)</center>
         </th>
         <th></th>
     </tr>
@@ -48,26 +48,27 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>
+            @*<td>
                 @Html.DisplayFor(modelItem => item.FirstName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.LastName)
-            </td>
+            </td>*@
             <td>
                 @Html.DisplayFor(modelItem => item.FullName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Age)
+                <center>@Html.DisplayFor(modelItem => item.Age)</center>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Address)
+                <center>@Html.DisplayFor(modelItem => item.Address)</center>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.HeadOfHousehold)
+                @*<center>@Html.DisplayFor(modelItem => item.HeadOfHousehold)</center>*@
+                <center>@Html.DisplayFor(modelItem => item.HeadOfHousehold) </center>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.SizeOfHousehold)
+                <center>@Html.DisplayFor(modelItem => item.SizeOfHousehold)</center>
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |

@@ -26,7 +26,7 @@ namespace LoanProgram.Data.Entities
         [Required]
         public string Occupation { get; set; }
         [Required]
-        public int Salary { get; set; }
+        public double Salary { get; set; }
         [Required]
         public DateTime MoveInDate { get; set; }
         public DateTime ApplicationDate { get; set; } = DateTime.Now;

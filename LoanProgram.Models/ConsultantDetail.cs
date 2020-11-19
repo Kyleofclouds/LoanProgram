@@ -20,6 +20,7 @@ namespace LoanProgram.Models
         [Display(Name = "Is Current Employee")]
         public bool IsCurrentEmployee { get; set; }
         [Display(Name = "Hire Date")]
+        [DataType(DataType.Date)]
         public DateTime HireDate { get; set; }
         [Display(Name = "Time With Company")]
         public double TimeWith

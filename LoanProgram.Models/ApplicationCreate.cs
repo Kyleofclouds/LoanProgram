@@ -21,9 +21,10 @@ namespace LoanProgram.Models
         [Required]
         public string Occupation { get; set; }
         [Required]
-        public int Salary { get; set; }
+        public double Salary { get; set; }
         [Required]
         [Display(Name = "Move-in Date")]
+        [DataType(DataType.Date)]
         public DateTime MoveInDate { get; set; }
         [Required]
         [DataType(DataType.PhoneNumber)]

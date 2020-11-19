@@ -52,7 +52,7 @@ namespace LoanProgram.Services
                                     Specialization = e.Specialization,
                                     IsCurrentEmployee = e.IsCurrentEmployee,
                                     HireDate = e.HireDate,
-                                    TimeWith = e.TimeWith
+                                    //TimeWith = e.TimeWith
                                 }
                         );
 

@@ -15,8 +15,9 @@ namespace LoanProgram.Models
         [MaxLength(200, ErrorMessage = "Keep the number of characters 200 or fewer.")]
         public string Description { get; set; }
         public string Occupation { get; set; }
-        public int Salary { get; set; }
+        public double Salary { get; set; }
         [Display(Name = "Move-in Date")]
+        [DataType(DataType.Date)]
         public DateTime MoveInDate { get; set; }
         [DataType(DataType.PhoneNumber)]
         public string Phone { get; set; }
