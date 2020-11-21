@@ -7,7 +7,7 @@
 <h2>Pending Applications</h2>
 
 <p>
-    @Html.ActionLink("Start An Application", "Create")
+    @Html.ActionLink("Submit An Application", "Create")
 </p>
 @if (TempData.ContainsKey("SaveResult"))
 {
@@ -25,7 +25,7 @@
             @Html.DisplayNameFor(model => model.Applicant.FullName)
         </th>
         <th>
-            <center>@Html.DisplayNameFor(model => model.Description)</center>
+            <center>@Html.DisplayNameFor(model => model.Type)</center>
         </th>
         <th>
             <center>@Html.DisplayNameFor(model => model.Occupation)</center>
@@ -49,7 +49,7 @@
             <center>@Html.DisplayNameFor(model => model.Email)</center>
         </th>
         <th>
-            <center>@Html.DisplayNameFor(model => model.PreferredConsultant)</center>
+            <center>@Html.DisplayNameFor(model => model.Consultant.FullName)</center>
         </th>
         <th></th>
     </tr>
@@ -61,13 +61,13 @@
                 @Html.DisplayFor(modelItem => item.Applicant.FullName)
             </td>
             <td>
-                <center>@Html.DisplayFor(modelItem => item.Description)</center>
+                <center>@Html.DisplayFor(modelItem => item.Type)</center>
             </td>
             <td>
                 <center>@Html.DisplayFor(modelItem => item.Occupation)</center>
             </td>
             <td>
-                <center>@Html.DisplayFor(modelItem => item.Salary)</center>
+                <center>$@Html.DisplayFor(modelItem => item.Salary)</center>
             </td>
             @*<td>
                 <center>@Html.DisplayFor(modelItem => item.MoveInDate)</center>
@@ -76,7 +76,7 @@
                 <center>@Html.DisplayFor(modelItem => item.ApplicationDate)</center>
             </td>
             <td>
-                <center>@Html.DisplayFor(modelItem => item.ResidencyLength)</center>
+                <center>@Html.DisplayFor(modelItem => item.ResidencyLength) Years</center>
             </td>
             <td>
                 <center>@Html.DisplayFor(modelItem => item.Phone)</center>
@@ -85,7 +85,7 @@
                 <center>@Html.DisplayFor(modelItem => item.Email)</center>
             </td>
             <td>
-                <center>@Html.DisplayFor(modelItem => item.PreferredConsultant)</center>
+                <center>@Html.DisplayFor(modelItem => item.Consultant.FullName)</center>
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |

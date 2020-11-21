@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Consultants</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add A Team Member", "Create")
 </p>
 @if (TempData.ContainsKey("SaveResult"))
 {
@@ -34,7 +34,7 @@
             <center>@Html.DisplayNameFor(model => model.Specialization)</center>
         </th>
         <th>
-            <center>@Html.DisplayNameFor(model => model.IsCurrentEmployee)</center>
+            <center>@Html.DisplayNameFor(model => model.CurrentEmployee)</center>
         </th>
         <th>
             <center>@Html.DisplayNameFor(model => model.HireDate)</center>
@@ -61,13 +61,13 @@
         <center>@Html.DisplayFor(modelItem => item.Specialization)</center>
     </td>
     <td>
-        <center>@Html.DisplayFor(modelItem => item.IsCurrentEmployee)</center>
+        <center>@Html.DisplayFor(modelItem => item.CurrentEmployee)</center>
     </td>
     <td>
         <center>@Html.DisplayFor(modelItem => item.HireDate)</center>
     </td>
     <td>
-        <center>@Html.DisplayFor(modelItem => item.TimeWith)</center>
+        <center>@Html.DisplayFor(modelItem => item.TimeWith) Years</center>
     </td>
     <td>
         @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |

@@ -18,6 +18,7 @@ namespace LoanProgram.Data.Entities
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
+        [Display(Name = "Consultant")]
         public string FullName { get { return $"{FirstName} {LastName}"; } }
         [Required]
         public string Specialization { get; set; }

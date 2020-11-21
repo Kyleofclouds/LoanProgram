@@ -18,12 +18,18 @@ namespace LoanProgram.Models
         [Display(Name = "Full Name")]
         public string FullName { get { return $"{FirstName} {LastName}"; } }
         public string Specialization { get; set; }
-        [Display(Name ="Current Employee")]
         public bool IsCurrentEmployee { get; set; }
+        [Display(Name = "Current Employee")]
+        public string CurrentEmployee { get { return IsCurrentEmployee ? "Yes" : "No"; } }
         [Display(Name = "Hire Date")]
         [DataType(DataType.Date)]
         public DateTime HireDate { get; set; }
         [Display(Name = "Time With Company")]
-        public double TimeWith { get; set; }
+        public double TimeWith { get
+            {
+                TimeSpan time = DateTime.Now - HireDate;
+                double years = Math.Floor(time.TotalDays / 365);
+                return years;
+            } }
     }
 }

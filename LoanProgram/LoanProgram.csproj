@@ -246,13 +246,13 @@
     <Content Include="Views\Applicant\Details.cshtml" />
     <Content Include="Views\Consultant\Details.cshtml" />
     <Content Include="Views\Application\Details.cshtml" />
-    <Content Include="Views\Applicant\Edit.cshtml" />
-    <Content Include="Views\Consultant\Edit.cshtml" />
-    <Content Include="Views\Application\Edit.cshtml" />
-    <Content Include="Views\Applicant\Delete.cshtml" />
     <Content Include="Views\Consultant\Delete.cshtml" />
     <Content Include="Views\Application\Delete.cshtml" />
     <Content Include="Views\Shared\DisplayTmeplates\DateTimeOffset.cshtml" />
+    <Content Include="Views\Consultant\Edit.cshtml" />
+    <Content Include="Views\Application\Edit.cshtml" />
+    <Content Include="Views\Applicant\Edit.cshtml" />
+    <Content Include="Views\Applicant\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

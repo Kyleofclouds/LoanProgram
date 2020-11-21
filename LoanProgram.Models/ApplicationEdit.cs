@@ -9,6 +9,7 @@ namespace LoanProgram.Models
 {
     public class ApplicationEdit
     {
+        public int Id { get; set; }
         [Display(Name = "Applicant Id")]
         public int ApplicantId { get; set; }
         public string Type { get; set; }

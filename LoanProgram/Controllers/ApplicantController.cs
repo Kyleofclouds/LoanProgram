@@ -63,14 +63,14 @@ namespace LoanProgram.Controllers
                     Age = detail.Age,
                     Address = detail.Address,
                     MarriageStatus = detail.MarriageStatus,
-                    HeadOfHousehold = detail.HeadOfHousehold,
+                    IsHeadOfHousehold = detail.IsHeadOfHousehold,
                     SizeOfHousehold = detail.SizeOfHousehold
                 };
             return View(model);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, ApplicantDetail model)
+        public ActionResult Edit(int id, ApplicantEdit model)
         {
             if (!ModelState.IsValid) return View(model);
 
@@ -84,11 +84,11 @@ namespace LoanProgram.Controllers
 
             if (service.UpdateApplicant(model))
             {
-                TempData["SaveResult"] = "Your note was updated.";
+                TempData["SaveResult"] = "Applicant Data Successfully Updated";
                 return RedirectToAction("Index");
             }
 
-            ModelState.AddModelError("", "Your note could not be updated.");
+            ModelState.AddModelError("", "Failed to Update Applicant");
             return View(model);
         }
         [ActionName("Delete")]
@@ -108,7 +108,7 @@ namespace LoanProgram.Controllers
 
             service.DeleteApplicant(id);
 
-            TempData["SaveResult"] = "Your note was deleted";
+            TempData["SaveResult"] = "Client Was Deleted From Roster";
 
             return RedirectToAction("Index");
         }

@@ -14,11 +14,13 @@ namespace LoanProgram.Models
         public string FirstName { get; set; }
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
-        [Display(Name = "Full Name")]
+        [Display(Name = "Name")]
         public string FullName { get { return $"{FirstName} {LastName}"; } }
         public string Specialization { get; set; }
         [Display(Name = "Is Current Employee")]
         public bool IsCurrentEmployee { get; set; }
+        [Display(Name = "Current Employee")]
+        public string CurrentEmployee { get { return IsCurrentEmployee ? "Yes" : "No"; } }
         [Display(Name = "Hire Date")]
         [DataType(DataType.Date)]
         public DateTime HireDate { get; set; }
@@ -27,7 +29,7 @@ namespace LoanProgram.Models
         {
             get
             {
-                TimeSpan time = HireDate - DateTime.Now;
+                TimeSpan time = DateTime.Now-HireDate;
                 double years = Math.Floor(time.TotalDays / 365);
                 return years;
             }

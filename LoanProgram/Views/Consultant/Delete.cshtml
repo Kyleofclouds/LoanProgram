@@ -11,7 +11,7 @@
     <h4>ConsultantDetail</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
 
@@ -25,7 +25,7 @@
 
         <dd>
             @Html.DisplayFor(model => model.LastName)
-        </dd>
+        </dd>*@
 
         <dt>
             @Html.DisplayNameFor(model => model.FullName)
@@ -44,11 +44,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.IsCurrentEmployee)
+            @Html.DisplayNameFor(model => model.CurrentEmployee)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.IsCurrentEmployee)
+            @Html.DisplayFor(model => model.CurrentEmployee)
         </dd>
 
         <dt>

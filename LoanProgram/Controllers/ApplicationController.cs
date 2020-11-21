@@ -73,7 +73,7 @@ namespace LoanProgram.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, ApplicationDetail model)
+        public ActionResult Edit(int id, ApplicationEdit model)
         {
             if (!ModelState.IsValid) return View(model);
 
@@ -87,11 +87,11 @@ namespace LoanProgram.Controllers
 
             if (service.UpdateApplication(model))
             {
-                TempData["SaveResult"] = "Your note was updated.";
+                TempData["SaveResult"] = "Application Successfully Updated";
                 return RedirectToAction("Index");
             }
 
-            ModelState.AddModelError("", "Your note could not be updated.");
+            ModelState.AddModelError("", "Failed to Update Application");
             return View(model);
         }
         [ActionName("Delete")]

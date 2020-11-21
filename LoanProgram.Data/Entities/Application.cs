@@ -32,7 +32,7 @@ namespace LoanProgram.Data.Entities
         public DateTime ApplicationDate { get; set; } = DateTime.Now;
         public double ResidencyLength { get
             {
-                 return (ApplicationDate - MoveInDate).TotalDays;
+                 return Math.Floor((ApplicationDate - MoveInDate).TotalDays/365);
             } }
         [Required]
         [DataType(DataType.PhoneNumber)]

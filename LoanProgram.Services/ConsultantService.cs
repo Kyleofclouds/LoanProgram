@@ -79,7 +79,7 @@ namespace LoanProgram.Services
                     };
             }
         }
-        public bool UpdateConsultant(ConsultantDetail model)
+        public bool UpdateConsultant(ConsultantEdit model)
         {
             using (var ctx = new ApplicationDbContext())
             {

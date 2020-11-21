@@ -28,7 +28,7 @@ namespace LoanProgram.Services
                     Age = model.Age,
                     Address = model.Address,
                     MarriageStatus = model.MarriageStatus,
-                    HeadOfHousehold = model.HeadOfHousehold,
+                    IsHeadOfHousehold = model.IsHeadOfHousehold,
                     SizeOfHousehold = model.SizeOfHousehold
                 };
 
@@ -56,7 +56,7 @@ namespace LoanProgram.Services
                                     Age = e.Age,
                                     Address = e.Address,
                                     MarriageStatus = e.MarriageStatus,
-                                    HeadOfHousehold = e.HeadOfHousehold,
+                                    IsHeadOfHousehold = e.IsHeadOfHousehold,
                                     SizeOfHousehold = e.SizeOfHousehold
                                 }
                         );
@@ -81,12 +81,12 @@ namespace LoanProgram.Services
                         Age = entity.Age,
                         Address = entity.Address,
                         MarriageStatus = entity.MarriageStatus,
-                        HeadOfHousehold = entity.HeadOfHousehold,
+                        IsHeadOfHousehold = entity.IsHeadOfHousehold,
                         SizeOfHousehold = entity.SizeOfHousehold
                     };
             }
         }
-        public bool UpdateApplicant(ApplicantDetail model)
+        public bool UpdateApplicant(ApplicantEdit model)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -100,20 +100,20 @@ namespace LoanProgram.Services
                 entity.Age = model.Age;
                 entity.Address = model.Address;
                 entity.MarriageStatus = model.MarriageStatus;
-                entity.HeadOfHousehold = model.HeadOfHousehold;
+                entity.IsHeadOfHousehold = model.IsHeadOfHousehold;
                 entity.SizeOfHousehold = model.SizeOfHousehold;
 
                 return ctx.SaveChanges() == 1;
             }
         }
-        public bool DeleteApplicant(int noteId)
+        public bool DeleteApplicant(int Id)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
                         .Applicants
-                        .Single(e => e.Id == noteId && e.CreatedBy == _userId);
+                        .Single(e => e.Id == Id && e.CreatedBy == _userId);
 
                 ctx.Applicants.Remove(entity);
 

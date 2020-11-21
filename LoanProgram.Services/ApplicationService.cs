@@ -54,7 +54,7 @@ namespace LoanProgram.Services
                                 new ApplicationListItem
                                 {
                                     Id = e.Id,
-                                    ApplicantId = e.ApplicantId,
+                                    Applicant = e.Applicant,
                                     Type = e.Type,
                                     Description = e.Description,
                                     Occupation = e.Occupation,
@@ -65,7 +65,7 @@ namespace LoanProgram.Services
                                     Phone = e.Phone,
                                     Email = e.Email,
                                     Contact = e.Contact,
-                                    PreferredConsultant = e.PreferredConsultant
+                                    Consultant = e.Consultant
                                 }
                         );
 
@@ -95,11 +95,12 @@ namespace LoanProgram.Services
                         ResidencyLength = entity.ResidencyLength,
                         Phone = entity.Phone,
                         Email = entity.Email,
-                        PreferredConsultant = entity.PreferredConsultant
+                        Contact = entity.Contact,
+                        Consultant = entity.Consultant
                     };
             }
         }
-        public bool UpdateApplication(ApplicationDetail model)
+        public bool UpdateApplication(ApplicationEdit model)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -113,7 +114,7 @@ namespace LoanProgram.Services
                 entity.Description = model.Description;
                 entity.Occupation = model.Occupation;
                 entity.Salary = model.Salary;
-                entity.MoveInDate = model.MoveInDate;
+                entity.MoveInDate = model.MoveInDate;//Need help
                 entity.Phone = model.Phone;
                 entity.Email = model.Email;
                 entity.Contact = model.Contact;
@@ -122,14 +123,14 @@ namespace LoanProgram.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-        public bool DeleteApplication(int noteId)
+        public bool DeleteApplication(int Id)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
                         .Applications
-                        .Single(e => e.Id == noteId && e.CreatedBy == _userId);
+                        .Single(e => e.Id == Id && e.CreatedBy == _userId);
 
                 ctx.Applications.Remove(entity);
 

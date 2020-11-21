@@ -13,9 +13,9 @@ namespace LoanProgram.Models
     {
         public int Id { get; set; }
         [Display(Name = "Applicant ID")]
-        public int ApplicantId { get; set; }
-        [ForeignKey(nameof(ApplicantId))]
-        public virtual Applicant Applicant { get; set; }
+        /*public int ApplicantId { get; set; }*/
+        /*[ForeignKey(nameof(ApplicantId))]*/
+        public Applicant Applicant { get; set; }
         public string Type { get; set; }
         public string Description { get; set; }
         public string Occupation { get; set; }
@@ -27,13 +27,13 @@ namespace LoanProgram.Models
         [DataType(DataType.Date)]
         public DateTime ApplicationDate { get; set; }
         [Display(Name = "Residency Length")]
-        public double ResidencyLength { get; set; }
+        public double ResidencyLength { get { return Math.Floor((ApplicationDate - MoveInDate).TotalDays/365); }}
         [DataType(DataType.PhoneNumber)]
         public string Phone { get; set; }
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         public string Contact { get; set; }
         [Display(Name = "Preferred Consultant")]
-        public int PreferredConsultant { get; set; }
+        public Consultant Consultant { get; set; }
     }
 }
