@@ -1294,6 +1294,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
+  text-align:center;
 }
 @media (min-width: 768px) {
   .lead {
@@ -4665,27 +4666,40 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+  background-color: green;
+  border-color: red;
+  opacity: .75;
 }
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+  color: white;
+  opacity: 1;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
   color: #fff;
-  background-color: transparent;
+  background-color: lightgreen;
 }
 .navbar-inverse .navbar-text {
-  color: #9d9d9d;
+  color: white;
+  opacity: 1;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #9d9d9d;
+  color: white;
+  opacity: 1;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #fff;
-  background-color: transparent;
+  background-color: lightgreen;
+}
+/*here*/
+.navbar-inverse .navbar-nav > li > ul > li{
+    display: none;
+}
+.navbar-inverse .navbar-nav > li:hover > ul > li{
+    display:block;
+    text-align:center;
+    color:white;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -5036,16 +5050,18 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: green;
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: red;
+  text-align: center;
 }
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
+  color:white;
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;

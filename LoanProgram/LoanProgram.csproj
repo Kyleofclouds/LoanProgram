@@ -182,16 +182,37 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Assets\autumn.jpg" />
+    <Content Include="Content\Assets\bluestriped.jpg" />
+    <Content Include="Content\Assets\bricks.jpg" />
+    <Content Include="Content\Assets\Lending-money-to-frnd.png" />
+    <Content Include="Content\Assets\maxresdefault.jpg" />
+    <Content Include="Content\Assets\Pattern-Background-Nice-Wallpaper-16492.jpg" />
+    <Content Include="Content\Assets\person1.jpg" />
+    <Content Include="Content\Assets\person2.jpg" />
+    <Content Include="Content\Assets\person3.jpg" />
+    <Content Include="Content\Assets\person4.jpg" />
+    <Content Include="Content\Assets\person6.jpg" />
+    <Content Include="Content\Assets\person7.jpg" />
+    <Content Include="Content\Assets\person8.jpg" />
+    <Content Include="Content\Assets\pro-pattern-11.jpg" />
+    <Content Include="Content\Assets\scratchy.jpg" />
+    <Content Include="Content\Assets\slatebrick.jpg" />
+    <Content Include="Content\Assets\solid.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fontawesome.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -248,11 +269,23 @@
     <Content Include="Views\Application\Details.cshtml" />
     <Content Include="Views\Consultant\Delete.cshtml" />
     <Content Include="Views\Application\Delete.cshtml" />
-    <Content Include="Views\Shared\DisplayTmeplates\DateTimeOffset.cshtml" />
     <Content Include="Views\Consultant\Edit.cshtml" />
     <Content Include="Views\Application\Edit.cshtml" />
     <Content Include="Views\Applicant\Edit.cshtml" />
     <Content Include="Views\Applicant\Delete.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -5,6 +5,7 @@ using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace LoanProgram.Data.Entities
 {
@@ -23,5 +24,6 @@ namespace LoanProgram.Data.Entities
         public string MarriageStatus { get; set; }
         public bool IsHeadOfHousehold { get; set; }
         public int SizeOfHousehold { get; set; }
+        //public Image Photo { get; set; }
     }
 }

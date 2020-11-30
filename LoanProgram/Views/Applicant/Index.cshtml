@@ -7,7 +7,7 @@
 <h2>Clientele</h2>
 
 <p>
-    @Html.ActionLink("Add A New Client", "Create")
+    <a class="btn btn-success" @Html.ActionLink("Add A New Client", "Create")</a>
 </p>
 @if (TempData.ContainsKey("SaveResult"))
 {
@@ -19,7 +19,8 @@
         @TempData["SaveResult"]
     </div>
 }
-<table class="table">
+<div class="nothing">
+<table class="table table-bordered"> @*table-striped table-hover*@
     <tr>
         @*<th>
             @Html.DisplayNameFor(model => model.FirstName)
@@ -64,7 +65,6 @@
                 <center>@Html.DisplayFor(modelItem => item.Address)</center>
             </td>
             <td>
-                @*<center>@Html.DisplayFor(modelItem => item.HeadOfHousehold)</center>*@
                 <center>@Html.DisplayFor(modelItem => item.HeadOfHousehold) </center>
             </td>
             <td>
@@ -79,3 +79,4 @@
     }
 
 </table>
+</div>

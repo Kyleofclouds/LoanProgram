@@ -74,6 +74,14 @@
     <Compile Include="Migrations\202011192132032_1More.Designer.cs">
       <DependentUpon>202011192132032_1More.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011240133397_Yet-Another-Migration.cs" />
+    <Compile Include="Migrations\202011240133397_Yet-Another-Migration.Designer.cs">
+      <DependentUpon>202011240133397_Yet-Another-Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011250352251_Cheese.cs" />
+    <Compile Include="Migrations\202011250352251_Cheese.Designer.cs">
+      <DependentUpon>202011250352251_Cheese.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -93,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011192132032_1More.resx">
       <DependentUpon>202011192132032_1More.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011240133397_Yet-Another-Migration.resx">
+      <DependentUpon>202011240133397_Yet-Another-Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011250352251_Cheese.resx">
+      <DependentUpon>202011250352251_Cheese.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

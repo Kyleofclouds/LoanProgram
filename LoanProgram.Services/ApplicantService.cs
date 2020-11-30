@@ -29,7 +29,8 @@ namespace LoanProgram.Services
                     Address = model.Address,
                     MarriageStatus = model.MarriageStatus,
                     IsHeadOfHousehold = model.IsHeadOfHousehold,
-                    SizeOfHousehold = model.SizeOfHousehold
+                    SizeOfHousehold = model.SizeOfHousehold,
+                    //Photo = model.Photo,
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -82,7 +83,8 @@ namespace LoanProgram.Services
                         Address = entity.Address,
                         MarriageStatus = entity.MarriageStatus,
                         IsHeadOfHousehold = entity.IsHeadOfHousehold,
-                        SizeOfHousehold = entity.SizeOfHousehold
+                        SizeOfHousehold = entity.SizeOfHousehold,
+                        //Photo = entity.Photo
                     };
             }
         }
