@@ -74,31 +74,35 @@ namespace LoanProgram.Services
         }
         public ApplicationDetail GetApplicationById (int id)
         {
-            using (var ctx = new ApplicationDbContext())
+            //try
             {
-                var entity =
-                    ctx
-                        .Applications
-                        .Single(e => e.Id == id && e.CreatedBy == _userId);
-                return
-                    new ApplicationDetail
-                    {
-                        Id = entity.Id,
-                        ApplicantId = entity.ApplicantId,
-                        Applicant = entity.Applicant,
-                        Type = entity.Type,
-                        Description = entity.Description,
-                        Occupation = entity.Occupation,
-                        Salary = entity.Salary,
-                        MoveInDate = entity.MoveInDate,
-                        ApplicationDate = entity.ApplicationDate,
-                        ResidencyLength = entity.ResidencyLength,
-                        Phone = entity.Phone,
-                        Email = entity.Email,
-                        Contact = entity.Contact,
-                        Consultant = entity.Consultant
-                    };
+                using (var ctx = new ApplicationDbContext())
+                {
+                    var entity =
+                        ctx
+                            .Applications
+                            .Single(e => e.Id == id && e.CreatedBy == _userId);
+                    return
+                        new ApplicationDetail
+                        {
+                            Id = entity.Id,
+                            ApplicantId = entity.ApplicantId,
+                            Applicant = entity.Applicant,
+                            Type = entity.Type,
+                            Description = entity.Description,
+                            Occupation = entity.Occupation,
+                            Salary = entity.Salary,
+                            MoveInDate = entity.MoveInDate,
+                            ApplicationDate = entity.ApplicationDate,
+                            ResidencyLength = entity.ResidencyLength,
+                            Phone = entity.Phone,
+                            Email = entity.Email,
+                            Contact = entity.Contact,
+                            Consultant = entity.Consultant
+                        };
+                }
             }
+            //catch(Exception e) { Console.WriteLine(e.Message); }
         }
         public bool UpdateApplication(ApplicationEdit model)
         {

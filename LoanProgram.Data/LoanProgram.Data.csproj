@@ -82,6 +82,10 @@
     <Compile Include="Migrations\202011250352251_Cheese.Designer.cs">
       <DependentUpon>202011250352251_Cheese.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012010323575_alpha.cs" />
+    <Compile Include="Migrations\202012010323575_alpha.Designer.cs">
+      <DependentUpon>202012010323575_alpha.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -107,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011250352251_Cheese.resx">
       <DependentUpon>202011250352251_Cheese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012010323575_alpha.resx">
+      <DependentUpon>202012010323575_alpha.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

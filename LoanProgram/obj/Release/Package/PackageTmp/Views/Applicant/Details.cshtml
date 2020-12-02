@@ -1,0 +1,81 @@
+﻿@model LoanProgram.Models.ApplicantDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Details for Applicant # @Html.DisplayFor(model => model.Id)</h4>
+    <hr />
+    <dl class="dl-horizontal col-md-offset-4">
+        @*<dt>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FirstName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.LastName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LastName)
+            </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarriageStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarriageStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeadOfHousehold)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeadOfHousehold)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SizeOfHousehold)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SizeOfHousehold)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

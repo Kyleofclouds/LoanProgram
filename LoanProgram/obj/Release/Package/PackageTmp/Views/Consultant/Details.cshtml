@@ -1,0 +1,74 @@
+﻿@model LoanProgram.Models.ConsultantDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ConsultantDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Specialization)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Specialization)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentEmployee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentEmployee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HireDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HireDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeWith)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeWith)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -21,7 +21,6 @@ namespace LoanProgram.Data.Entities
         [Required]
         public string Type { get; set; }
         [Required]
-        [MaxLength(200,ErrorMessage ="Keep the number of characters 200 or fewer.")]
         public string Description { get; set; }
         [Required]
         public string Occupation { get; set; }

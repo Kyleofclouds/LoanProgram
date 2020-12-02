@@ -1,0 +1,82 @@
+﻿@model IEnumerable<LoanProgram.Models.ApplicantListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Clientele</h2>
+
+<p>
+    <a class="btn btn-success" @Html.ActionLink("Add A New Client", "Create")</a>
+</p>
+@if (TempData.ContainsKey("SaveResult"))
+{
+    <div class="alert alert-success fade in" role="alert">
+
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @TempData["SaveResult"]
+    </div>
+}
+<div class="nothing">
+<table class="table table-bordered"> @*table-striped table-hover*@
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.FullName)
+        </th>
+        <th>
+            <center>@Html.DisplayNameFor(model => model.Age)</center>
+        </th>
+        <th>
+            <center>@Html.DisplayNameFor(model => model.Address)</center>
+        </th>
+        <th>
+            <center>@Html.DisplayNameFor(model => model.HeadOfHousehold)</center>
+        </th>
+        <th>
+            <center>@Html.DisplayNameFor(model => model.SizeOfHousehold)</center>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                <center>@Html.DisplayFor(modelItem => item.Age)</center>
+            </td>
+            <td>
+                <center>@Html.DisplayFor(modelItem => item.Address)</center>
+            </td>
+            <td>
+                <center>@Html.DisplayFor(modelItem => item.HeadOfHousehold) </center>
+            </td>
+            <td>
+                <center>@Html.DisplayFor(modelItem => item.SizeOfHousehold)</center>
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+</div>

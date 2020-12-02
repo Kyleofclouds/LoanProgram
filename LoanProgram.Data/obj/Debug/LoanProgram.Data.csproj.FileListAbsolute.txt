@@ -21,3 +21,4 @@ C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data
 C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Debug\LoanProgram.Data.Migrations._1More.resources
 C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Debug\LoanProgram.Data.Migrations.YetAnotherMigration.resources
 C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Debug\LoanProgram.Data.Migrations.Cheese.resources
+C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Debug\LoanProgram.Data.Migrations.alpha.resources

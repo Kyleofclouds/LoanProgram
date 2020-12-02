@@ -30,7 +30,10 @@ namespace LoanProgram.Models
         [Display(Name = "Size of Household")]
         [Range(1, 15, ErrorMessage = "Please enter a number between 1 & 15. If you have more than 15 members in your household, you pose too great a risk for a loan.")]
         public int SizeOfHousehold { get; set; }
-        public string Photo { get; set; }
-        public string AlternateText { get; } = "No Photo Selected";
+        //public string Photo { get; set; }
+        //public string AlternateText { get; } = "No Photo Selected";
+        public string ApplicationList { get; set; }
+        [Display(Name = "Pending Application ID")]
+        public string PendingApps { get { return ApplicationList.Length>0 ? ApplicationList : "None"; } }
     }
 }

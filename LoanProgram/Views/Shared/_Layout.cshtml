@@ -24,8 +24,8 @@
                     <li>
                         @Html.ActionLink("Applicants","Index","Applicant")
                         <ul>
-                            <li><a href="https://localhost:44370/Consultant">Consultants@*@Html.ActionLink("Option 1", "Index", "Consultant")*@</a></li>
-                            <li><a href="https://localhost:44370/Application">Applications@*@Html.ActionLink("Option 2", "Index", "Application")*@</a></li>
+                            <li>@Html.ActionLink("Consultants", "Index", "Consultant")</li>
+                            <li>@Html.ActionLink("Applications", "Index", "Application")</li>
                         </ul>
                     </li>
                     <li>@Html.ActionLink("Consultants", "Index", "Consultant")</li>

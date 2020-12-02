@@ -15,14 +15,14 @@ namespace LoanProgram.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Welcome to Chilton Lending";
+            ViewBag.Message = "About The Developer";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "How To Contact Me";
 
             return View();
         }

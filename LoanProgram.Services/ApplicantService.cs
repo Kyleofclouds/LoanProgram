@@ -58,7 +58,7 @@ namespace LoanProgram.Services
                                     Address = e.Address,
                                     MarriageStatus = e.MarriageStatus,
                                     IsHeadOfHousehold = e.IsHeadOfHousehold,
-                                    SizeOfHousehold = e.SizeOfHousehold
+                                    SizeOfHousehold = e.SizeOfHousehold,
                                 }
                         );
 
@@ -84,7 +84,7 @@ namespace LoanProgram.Services
                         MarriageStatus = entity.MarriageStatus,
                         IsHeadOfHousehold = entity.IsHeadOfHousehold,
                         SizeOfHousehold = entity.SizeOfHousehold,
-                        //Photo = entity.Photo
+                        ApplicationList = entity.Apps()
                     };
             }
         }

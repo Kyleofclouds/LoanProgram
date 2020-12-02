@@ -26,5 +26,8 @@ namespace LoanProgram.Models
         public string HeadOfHousehold { get { return IsHeadOfHousehold ? "Yes":"No"; } }
         [Display(Name = "Size of Household")]
         public int SizeOfHousehold { get; set; }
+        /*public string ApplicationList { get; set; }
+        [Display(Name = "Application ID(s)")]
+        public string PendingApps { get { return ApplicationList.Length > 0 ? string.Join(", ", ApplicationList) : "None"; } }*/
     }
 }
