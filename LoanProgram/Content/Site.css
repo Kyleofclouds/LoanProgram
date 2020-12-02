@@ -27,15 +27,6 @@ h4 {
 .nothing{
     background-image: url("Assets/Pattern-Background-Nice-Wallpaper-16492.jpg");
 }
-.navbar-inverse .navbar-nav > li > ul > li {
-    display: none;
-}
-.navbar-inverse .navbar-nav > li > ul > li > a{
-    display: block;
-    align-content: center;
-    text-align: center;
-    color: white;
-}
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 

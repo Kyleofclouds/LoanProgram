@@ -21,3 +21,4 @@ C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data
 C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Release\LoanProgram.Data.csproj.CopyComplete
 C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Release\LoanProgram.Data.dll
 C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Release\LoanProgram.Data.pdb
+C:\Users\kylew\1150Projects\DotNetProjects\RedBadge\LoanProgram\LoanProgram.Data\obj\Release\LoanProgram.Data.Migrations.alpha.resources

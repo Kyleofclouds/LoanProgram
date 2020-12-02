@@ -9,7 +9,7 @@
 <div>
     <h4>Details for Application #@Html.DisplayFor(model => model.Id)</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal col-md-offset-4">
         <dt>
             @Html.DisplayNameFor(model => model.Applicant.FullName)
         </dt>
@@ -45,7 +45,7 @@
         </dt>
 
         <dd>
-            $@Html.DisplayFor(model => model.Salary)
+            @Html.DisplayFor(model => model.Salary)
         </dd>
 
         <dt>
@@ -95,7 +95,7 @@
         </dd>
     </dl>
 </div>
-<p>
+<p style="text-align:center;">
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

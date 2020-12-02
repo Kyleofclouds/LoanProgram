@@ -7,7 +7,7 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Details for Applicant # @Html.DisplayFor(model => model.Id)</h4>
+    <h4>for Applicant # @Html.DisplayFor(model => model.Id)</h4>
     <hr />
     <dl class="dl-horizontal col-md-offset-4">
         @*<dt>
@@ -32,6 +32,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PendingApps)
+        </dt>
+
+        <dd>
+            @Html.ActionLink(Model.Id.ToString(), "Details", "Application", new { id = Model.Id }, null )
         </dd>
 
         <dt>
@@ -75,7 +83,7 @@
         </dd>
     </dl>
 </div>
-<p>
+<p style="text-align:center;">
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

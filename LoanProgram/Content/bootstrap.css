@@ -3266,19 +3266,19 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: green;
+  border-color: red;
 }
 .btn-success:focus,
 .btn-success.focus {
   color: #fff;
-  background-color: #449d44;
-  border-color: #255625;
+  background-color: green;
+  border-color: red;
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  background-color: green;
+  border-color: red;
 }
 .btn-success:active,
 .btn-success.active,
@@ -4697,9 +4697,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     display: none;
 }
 .navbar-inverse .navbar-nav > li:hover > ul > li{
-    display:block;
-    text-align:center;
-    color:white;
+    display: block;
+}
+.navbar-inverse .navbar-nav > li > ul > li > a{
+    align-content: center;
+    text-align: center;
+    color: white;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,

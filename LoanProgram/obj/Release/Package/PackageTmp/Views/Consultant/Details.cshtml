@@ -7,9 +7,9 @@
 <h2>Details</h2>
 
 <div>
-    <h4>ConsultantDetail</h4>
+    <h4>for Consultant #@Html.DisplayFor(model=>model.Id)</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal col-md-offset-4">
         @*<dt>
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
@@ -32,6 +32,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
         </dd>
 
         <dt>
@@ -68,7 +76,7 @@
 
     </dl>
 </div>
-<p>
+<p style="text-align:center;">
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
