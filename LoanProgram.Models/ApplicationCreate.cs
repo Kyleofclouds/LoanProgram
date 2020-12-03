@@ -34,6 +34,7 @@ namespace LoanProgram.Models
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         [Required(ErrorMessage ="Enter Your Preferred Contact Method")]
+        [RegularExpression("Phone|phone|Email|email",ErrorMessage = "Please enter \"Phone\" or \"Email\"")]
         public string Contact { get; set; }
         [Required(ErrorMessage ="Please Select a Consultant")]
         [Display(Name = "Preferred Consultant")]

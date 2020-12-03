@@ -7,37 +7,42 @@
     <p class="lead">Chilton Would Like To Wish You A Merry Christmas And A Happy New Year!</p>
     @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
 </div>
-
+<div class="lights visible-lg">
+    <img src="~/Content/Assets/lights.png" width="1140" height="125"/>
+</div>
 <div class="row">
-    <div class="hidden-sm hidden-xs" style="padding-left: 15px;">
-    <img src="~/Content/Assets/Lending-money-to-frnd.png" />
+    <div class="visible-lg" style="padding-left: 15px;">
+        <img src="~/Content/Assets/Lending-money-to-frnd.png" />
     </div>
-    <div class="visible-sm" style="padding-left: 15px;">
+    <div class="visible-md hidden-lg" style="padding-left: 15px;">
+        <img src="~/Content/Assets/Lending-money-to-frnd.png" width="940"/>
+    </div>
+    <div class="visible-sm hidden-md" style="padding-left: 15px;">
         <img src="~/Content/Assets/Lending-money-to-frnd.png" width="722" />
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Personal <i class="fas fa-user"></i></h2>
-        <p>
-            We can work out a plan to help you afford whatever it is that you desire.
-        </p>
-        <center><p><a class="btn btn-success" @Html.ActionLink("Start Here", "Create", "Application")</a></p></center>
+    <div class="row">
+        <div class="col-md-3">
+            <h2>Personal <i class="fas fa-user"></i></h2>
+            <p>
+                We can work out a plan to help you afford whatever it is that you desire.
+            </p>
+            <center>@Html.ActionLink("Start Here", "Create", "Application", null, new { @class = "btn btn-success" })</center>
+        </div>
+        <div class="col-md-3">
+            <h2>Home <i class="fas fa-home"></i></h2>
+            <p>Whether you are a first-time home buyer or are retiring to your dream home, we can put your financial mind at ease.</p>
+            <center>@Html.ActionLink("Start Here", "Create", "Application", null, new { @class = "btn btn-success" })</center>
+        </div>
+        <div class="col-md-3">
+            <h2>Auto <i class="fas fa-car"></i></h2>
+            <p>For those who need help getting back on the road.</p>
+            <center>@Html.ActionLink("Start Here", "Create", "Application", null, new { @class = "btn btn-success" })</center>
+        </div>
+        <div class="col-md-3">
+            <h2>Business <i class="fas fa-briefcase"></i></h2>
+            <p>Not only can we assist with getting your business up and running, we can connect you to angel investors who may be able to help save a business that has been having some hard times.</p>
+            <center><p><a class="btn btn-success" href="https://www.europac.com/">Learn more</a></p></center>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>Home <i class="fas fa-home"></i></h2>
-        <p>Whether you are a first-time home buyer or are retiring to your dream home, we can put your financial mind at ease.</p>
-        <center><p><a class="btn btn-success" @Html.ActionLink("Start Here", "Create", "Application")</a></p></center>
-    </div>
-    <div class="col-md-3">
-        <h2>Auto <i class="fas fa-car"></i></h2>
-        <p>For those who need help getting back on the road.</p>
-        <center><p><a class="btn btn-success" @Html.ActionLink("Start Here", "Create", "Application")</a></p></center>
-    </div>
-    <div class="col-md-3">
-        <h2>Business <i class="fas fa-briefcase"></i></h2>
-        <p>Not only can we assist with getting your business up and running, we can connect you to angel investors who may be able to help save a business that has been having some hard times.</p>
-        <center><p><a class="btn btn-info" href="https://www.europac.com/">Learn more</a></p></center>
-    </div>
-</div>
