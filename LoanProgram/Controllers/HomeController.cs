@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LoanProgram.Data;
+using LoanProgram.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +12,12 @@ namespace LoanProgram.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            /*ApplicantDropdownView applicantDropdownView = new ApplicantDropdownView();
+            using (var ctx = new ApplicationDbContext())
+            {
+                applicantDropdownView.ApplicantList = ctx.Applicants.Select(a => new SelectListItem { Text = a.FullName, Value = a.Id }).ToList();
+            }*/
+            return View(/*applicantDropdownView*/);
         }
 
         public ActionResult About()

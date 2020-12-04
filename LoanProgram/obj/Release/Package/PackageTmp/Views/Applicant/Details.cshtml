@@ -39,7 +39,14 @@
         </dt>
 
         <dd>
-            @Html.ActionLink(Model.Id.ToString(), "Details", "Application", new { id = Model.Id }, null )
+            @*@{ string code = "@Html.ActionLink(Model.ApplicationList, \"Details\", \"Application\", new {id = Model.ApplicationList }, null)";
+                if (Model.PendingApps != "None") {
+                    Console.WriteLine(code);
+                }
+                else {
+                    Console.WriteLine(Model.PendingApps);
+                } }*@
+            @Html.DisplayFor(model => model.PendingApps)
         </dd>
 
         <dt>

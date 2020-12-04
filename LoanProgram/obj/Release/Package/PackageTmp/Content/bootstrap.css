@@ -1082,11 +1082,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", Helvetica, Arial, serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #fff;
+  background-color: lightblue;
 }
 input,
 button,
@@ -2347,6 +2347,7 @@ pre code {
     margin-left: 0%;
   }
 }
+/*table here*/
 table {
   background-color: transparent;
 }
@@ -3266,19 +3267,19 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: green;
+  border-color: red;
 }
 .btn-success:focus,
 .btn-success.focus {
   color: #fff;
-  background-color: #449d44;
-  border-color: #255625;
+  background-color: green;
+  border-color: red;
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  background-color: green;
+  border-color: red;
 }
 .btn-success:active,
 .btn-success.active,
@@ -4669,6 +4670,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: green;
   border-color: red;
   opacity: .75;
+  letter-spacing: 1px
 }
 .navbar-inverse .navbar-brand {
   color: white;
@@ -4697,9 +4699,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     display: none;
 }
 .navbar-inverse .navbar-nav > li:hover > ul > li{
-    display:block;
-    text-align:center;
-    color:white;
+    display: block;
+    opacity: 1 !important;
+    margin-right: 1em !important;
+}
+.navbar-inverse .navbar-nav > li > ul > li > a {
+    margin-right: 1rem !important;
+    color: white !important;
+    opacity: 1 !important;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -4719,10 +4726,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #fff;
   background-color: #080808;
 }
-@media (max-width: 767px) {
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #080808;
-  }
+@media (min-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
     background-color: #080808;
   }

@@ -6,11 +6,10 @@
 
 <h2>Delete</h2>
 
-<h3>Are you sure you want to delete @Html.DisplayFor(model => model.FirstName) from the list of clients?</h3>
+<center><h3>Are you sure you want to delete @Html.DisplayFor(model => model.FirstName) from the list of clients?</h3></center>
 <div>
-    <h4>ApplicantDetail</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal col-md-offset-4">
         @*<dt>
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
@@ -88,9 +87,11 @@
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
-        </div>
+<center>
+    <div class="form-actions no-color">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-info" })
+    </div>
+</center>
     }
 </div>

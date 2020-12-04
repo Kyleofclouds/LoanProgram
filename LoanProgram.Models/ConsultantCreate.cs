@@ -13,9 +13,11 @@ namespace LoanProgram.Models
     {
         [Required]
         [Display(Name = "First Name")]
+        [RegularExpression("^[a-zA-Z ]*$", ErrorMessage = "Please Limit Your Characters to Letters Only")]
         public string FirstName { get; set; }
         [Required]
         [Display(Name = "Last Name")]
+        [RegularExpression("^[a-zA-Z ]*$", ErrorMessage = "Please Limit Your Characters to Letters Only")]
         public string LastName { get; set; }
         //public string FullName { get { return $"{FirstName} {LastName}"; } }
         [Required]

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Source=tcp:loanprogramdbserver.database.windows.net,1433;Initial Catalog=LoanProgram_db;User Id=AdminUsername@loanprogramdbserver;Password=AdminPassword@1;MultipleActiveResultSets-False;Encrypt-True;TrustServerCertificate-False;Connection Timeout-30;" tags="SqlConnectionString">
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:sd65finalprojectdbserver.database.windows.net,1433;Initial Catalog=SD65FinalProject_db;User Id=AdminUsername@sd65finalprojectdbserver;Password=AdminPassword@1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\kylew\\1150Projects\\DotNetProjects\\RedBadge\\LoanProgram\\LoanProgram\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
 </parameters>
