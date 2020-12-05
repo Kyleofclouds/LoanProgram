@@ -66,6 +66,7 @@
     <Compile Include="ConsultantDetail.cs" />
     <Compile Include="ConsultantEdit.cs" />
     <Compile Include="ConsultantListItem.cs" />
+    <Compile Include="ApplicantDropDownList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,5 @@
-﻿using LoanProgram.Models;
+﻿using LoanProgram.Data;
+using LoanProgram.Models;
 using LoanProgram.Services;
 using Microsoft.AspNet.Identity;
 using System;

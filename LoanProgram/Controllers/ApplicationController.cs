@@ -1,4 +1,5 @@
-﻿using LoanProgram.Models;
+﻿using LoanProgram.Data;
+using LoanProgram.Models;
 using LoanProgram.Services;
 using Microsoft.AspNet.Identity;
 using System;
@@ -24,7 +25,10 @@ namespace LoanProgram.Controllers
         //CREATE: Application
         public ActionResult Create()
         {
-            return View();
+            var p = new ApplicationCreate();
+            p.Applicants = new ApplicationDbContext().Applicants.ToList();
+            p.Consultants = new ApplicationDbContext().Consultants.ToList();
+            return View(p);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -58,6 +62,8 @@ namespace LoanProgram.Controllers
             var model =
                 new ApplicationEdit
                 {
+                    Applicants = new ApplicationDbContext().Applicants.ToList(),
+                    Consultants = new ApplicationDbContext().Consultants.ToList(),
                     ApplicantId = detail.ApplicantId,
                     Type = detail.Type,
                     Description = detail.Description,

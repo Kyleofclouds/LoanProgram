@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoanProgram.Data.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace LoanProgram.Models
     {
         public int Id { get; set; }
         [Display(Name = "Applicant Id")]
+        [Required(ErrorMessage = "Please Select an Applicant")]
         public int ApplicantId { get; set; }
         public string Type { get; set; }
         [MaxLength(200, ErrorMessage = "Keep the number of characters 200 or fewer.")]
@@ -26,6 +28,11 @@ namespace LoanProgram.Models
         public string Email { get; set; }
         public string Contact { get; set; }
         [Display(Name = "Preferred Consultant")]
+        [Required(ErrorMessage = "Please Select a Consultant")]
         public int PreferredConsultant { get; set; }
+        public List<Applicant> Applicants { get; set; }
+        public Applicant Applicant { get; set; }
+        public List<Consultant> Consultants { get; set; }
+        public Consultant Consultant { get; set; }
     }
 }

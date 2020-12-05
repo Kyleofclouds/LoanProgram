@@ -12,12 +12,7 @@ namespace LoanProgram.Controllers
     {
         public ActionResult Index()
         {
-            /*ApplicantDropdownView applicantDropdownView = new ApplicantDropdownView();
-            using (var ctx = new ApplicationDbContext())
-            {
-                applicantDropdownView.ApplicantList = ctx.Applicants.Select(a => new SelectListItem { Text = a.FullName, Value = a.Id }).ToList();
-            }*/
-            return View(/*applicantDropdownView*/);
+            return View();
         }
 
         public ActionResult About()

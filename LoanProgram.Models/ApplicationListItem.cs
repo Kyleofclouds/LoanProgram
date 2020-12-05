@@ -31,6 +31,7 @@ namespace LoanProgram.Models
         [DataType(DataType.PhoneNumber)]
         public string Phone { get; set; }
         [DataType(DataType.EmailAddress)]
+        [Display(Name = "Client Email")]
         public string Email { get; set; }
         public string Contact { get; set; }
         [Display(Name = "Preferred Consultant")]
