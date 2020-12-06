@@ -9,7 +9,9 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-
+table{
+    background-color:white;
+}
 th{
     text-align: center;
 }
